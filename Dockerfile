@@ -5,5 +5,5 @@ RUN apt-get update && \
 
 RUN git clone "https://github.com/JangJongMin/DogLang.git"
 
-RUN cd DogLang
+WORKDIR DogLang
 RUN gcc -o DogLang main.c
